@@ -3,7 +3,7 @@ resource "aws_iam_user" "bedrock_dev" {
   name = "bedrock-dev-view"
 }
 
-# Create Access Keys for Grading Deliverable
+# Created Access Keys for Grading Deliverable
 resource "aws_iam_access_key" "bedrock_dev_key" {
   user = aws_iam_user.bedrock_dev.name
 }
