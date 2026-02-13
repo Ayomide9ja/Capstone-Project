@@ -1,0 +1,14 @@
+# Ignore Terraform binary and plugins
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ignore credentials and sensitive outputs
+grading.json
+*.tfvars
+
+# Ignore ZIP files (Lambda)
+*.zip
+
+# Ignore system files
+.DS_Store
