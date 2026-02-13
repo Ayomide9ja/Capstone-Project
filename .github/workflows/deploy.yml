@@ -12,11 +12,9 @@ jobs:
   terraform:
     name: Terraform Plan & Apply
     runs-on: ubuntu-latest
-    
-    # Use the 'terraform' folder as the working directory
-    defaults:
-      run:
-        working-directory: ./terraform
+
+    # REMOVED: defaults.run.working-directory
+    # This now runs directly in the root folder where your files are.
 
     steps:
     - name: Checkout Code
